@@ -1,72 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Video Background</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden; /* Hide scrollbars */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-
-    video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-    iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    .content {
-      text-align: center;
-      z-index: 1; /* Place it above the video */
-      color: #fff;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.2em;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Video Background -->
-  <div>
-    <iframe
-        src="https://player.vimeo.com/video/891414013?autoplay=1&amp;loop=1&amp;byline=0&amp;title=0&amp;muted=1&amp;controls=0&amp;app_id=58479"
-        frameborder="0"
-        style="
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;"
-        allow="autoplay"
-        title="CARTE_MASTER2024">
-    </iframe>
-</div>
-<script src="https://player.vimeo.com/api/player.js"></script>
+  <div id='container'
+    style="position: absolute;width: 100%;height: 100%;display: flex;flex-direction: column; align-items: center;justify-content: center;">
 
-<!-- Content -->
+    <iframe
+      src="https://player.vimeo.com/video/891414013?autoplay=1&amp;loop=1&amp;byline=0&amp;title=0&amp;muted=1&amp;controls=0&amp;app_id=58479"
+      frameborder="0" style="width: 100%;" allow="autoplay" title="CARTE_MASTER2024">
+    </iframe>
+
+    <p id="info">2024 sera l'année du Dragon : <br>le cinquième animal du Zodiaque Chinois qui vous
+      confèrera force et réussite !</p>
+  </div>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <!-- Content -->
   <!-- <div class="content">
     <h1>Your Website Title</h1>
     <p>Your website content goes here.</p>
   </div> -->
 </body>
+
 </html>
